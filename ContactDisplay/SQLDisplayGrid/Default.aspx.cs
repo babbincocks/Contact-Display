@@ -42,7 +42,6 @@ namespace SQLDisplayGrid
             }
             else
             {
-                txtEmail.TextMode = TextBoxMode.Email;
                 email = txtEmail.Text;
             }
 
@@ -81,8 +80,27 @@ namespace SQLDisplayGrid
 
                             gvContacts.DataBind();
 
+                            txtName.Text = "Name";
+                            txtAddress1.Text = "Address 1";
+                            txtAddress2.Text = "Address 2";
+                            txtCity.Text = "City";
+                            txtPhone.Text = "Phone";
+                            txtEmail.Text = "E-mail";
+
+                        }
+                        else
+                        {
+                            Response.Write("You need to insert a valid phone number.");
                         }
                     }
+                    else
+                    {
+                        Response.Write("You need to insert a valid city.");
+                    }
+                }
+                else
+                {
+                    Response.Write("You need to insert a valid address.");
                 }
                 
             }
