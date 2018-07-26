@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <asp:Panel ID="Panel1" runat="server">
-                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ContactID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
+                <asp:GridView ID="gvContacts" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ContactID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                     <Columns>
                         <asp:CommandField ShowEditButton="True" ShowSelectButton="True" />
@@ -51,8 +51,8 @@
                         </th>
                     </tr>
                     <tr>
-                        <th><asp:TextBox ID="txtPhone" runat="server" Text="Phone"></asp:TextBox></th>
-                        <th><asp:TextBox ID="txtEmail" runat="server" Text="E-mail" TextMode="Email"></asp:TextBox></th>
+                        <th><asp:TextBox ID="txtPhone" runat="server" Text="Phone" TextMode="Phone"></asp:TextBox></th>
+                        <th><asp:TextBox ID="txtEmail" runat="server" Text="E-mail"></asp:TextBox></th>
                     </tr>
                 </table>
                 <asp:Button ID="btnInsert" runat="server" Text="Insert Data" OnClick="btnInsert_Click" />

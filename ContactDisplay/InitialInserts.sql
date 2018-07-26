@@ -20,7 +20,7 @@ VALUES('Shipiffany', '1244 Watula Ave.', NULL, 'Brimbia', '1-467-223-5572', NULL
 
 GO
 CREATE PROC [dbo].[sp_InsertContact]
-(@Name VARCHAR(50), @Address1 VARCHAR(50), @Address2 VARCHAR(50), @City VARCHAR(40), @Phone VARCHAR(15), @Email VARCHAR(65))
+(@Name VARCHAR(50), @Address1 VARCHAR(50), @Address2 VARCHAR(50) = null, @City VARCHAR(40), @Phone VARCHAR(15), @Email VARCHAR(65) = null)
 AS
 BEGIN
 INSERT ContactInfo
