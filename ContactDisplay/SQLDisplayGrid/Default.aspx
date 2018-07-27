@@ -5,6 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 171px;
+        }
+    </style>
+    <link href="main.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,25 +41,35 @@
                 <br />
                 <table>
                     <tr>
+                        <th><h5>Name</h5></th>
                         <th>
-                    <asp:TextBox runat="server" ID="txtName" Text="Name"></asp:TextBox>
+                   <asp:TextBox runat="server" ID="txtName"></asp:TextBox>
                         </th>
                         </tr>
                     <tr>
+                        <th><h5>Address</h5></th>
                         <th>
-                    <asp:TextBox runat="server" ID="txtAddress1" Text="Address 1"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="txtAddress1"></asp:TextBox>
                         </th>
                         <th>
-                    <asp:TextBox ID="txtAddress2" runat="server" Text="Address 2"></asp:TextBox>
+                    <asp:TextBox ID="txtAddress2" runat="server"></asp:TextBox>
                         </th>
+                        <th><h5>City</h5></th>
                         <th>
-                            <asp:TextBox ID="txtCity" runat="server" Text="City"></asp:TextBox>
+                            <asp:TextBox ID="txtCity" runat="server" ></asp:TextBox>
+                            
                         </th>
                     </tr>
                     <tr>
-                        <th><asp:TextBox ID="txtPhone" runat="server" Text="Phone" TextMode="Phone"></asp:TextBox></th>
-                        <th><asp:TextBox ID="txtEmail" runat="server" Text="E-mail"></asp:TextBox></th>
+                        <th><h5>Phone</h5></th>
+                        <th><asp:TextBox ID="txtPhone" runat="server" TextMode="Phone"></asp:TextBox></th>
+                        </tr>
+                    <tr>
+                        <th><h5>E-mail</h5></th>
+                        <th><asp:TextBox ID="txtEmail" runat="server"></asp:TextBox></th>
                     </tr>
+                        
+                    
                 </table>
                 <asp:Button ID="btnInsert" runat="server" Text="Insert Data" OnClick="btnInsert_Click" />
                     
