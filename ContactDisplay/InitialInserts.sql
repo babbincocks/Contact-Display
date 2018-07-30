@@ -16,7 +16,7 @@ CONSTRAINT PK_Contact PRIMARY KEY (ContactID)
 INSERT ContactInfo (Name, Address1, Address2, City, Phone, Email)
 VALUES('Shipiffany', '1244 Watula Ave.', NULL, 'Brimbia', '1-467-223-5572', NULL), 
 ('Krusty Kruck', '89 Tootaloo Ln.', NULL, 'Brimbia', '1-467-423-5411', NULL),
-('Toutius Sextius', '12 Talos Way', NULL, 'Skingrad', '1-400-739-8487', 'cyrodiilicbadboy@tamriel.com')
+('Edgar Vautrine', '12 Market Way', NULL, 'Imperial City', '1-400-739-8487', 'cheapspellsquick@tamriel.com')
 
 GO
 CREATE PROC [dbo].[sp_InsertContact]
