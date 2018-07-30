@@ -2,6 +2,11 @@
 
 .Noleft{margin-left:0;}
 
-th{margin:0;}
+th{margin:0; border:0; padding:0;}
 
-tr{height:35px;}
+tr {
+    height: 35px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
